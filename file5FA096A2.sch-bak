@@ -1,0 +1,171 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VBUS #PWR027
+U 1 1 5FA0B274
+P 1600 1250
+F 0 "#PWR027" H 1600 1100 50  0001 C CNN
+F 1 "VBUS" H 1615 1423 50  0000 C CNN
+F 2 "" H 1600 1250 50  0001 C CNN
+F 3 "" H 1600 1250 50  0001 C CNN
+	1    1600 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1250 1600 1400
+Wire Wire Line
+	1600 1400 1350 1400
+$Comp
+L Connector:USB_B_Micro J8
+U 1 1 5FA0C020
+P 1050 1600
+F 0 "J8" H 1107 2067 50  0000 C CNN
+F 1 "USB_B_Micro" H 1107 1976 50  0000 C CNN
+F 2 "" H 1200 1550 50  0001 C CNN
+F 3 "~" H 1200 1550 50  0001 C CNN
+	1    1050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 5FA0D9C9
+P 1050 2100
+F 0 "#PWR025" H 1050 1850 50  0001 C CNN
+F 1 "GND" H 1055 1927 50  0000 C CNN
+F 2 "" H 1050 2100 50  0001 C CNN
+F 3 "" H 1050 2100 50  0001 C CNN
+	1    1050 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2000 1050 2100
+Wire Wire Line
+	950  2000 1050 2000
+Connection ~ 1050 2000
+$Comp
+L Power_Protection:USBLC6-2P6 U5
+U 1 1 5FA0E64B
+P 2750 1650
+F 0 "U5" H 2200 2150 50  0000 C CNN
+F 1 "USBLC6-2P6" H 2400 2050 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-666" H 2750 1150 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 2950 2000 50  0001 C CNN
+	1    2750 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1600 2350 1600
+Wire Wire Line
+	2350 1600 2350 1550
+Wire Wire Line
+	1350 1700 2350 1700
+Wire Wire Line
+	2350 1700 2350 1750
+$Comp
+L power:GND #PWR030
+U 1 1 5FA12A91
+P 2750 2150
+F 0 "#PWR030" H 2750 1900 50  0001 C CNN
+F 1 "GND" H 2755 1977 50  0000 C CNN
+F 2 "" H 2750 2150 50  0001 C CNN
+F 3 "" H 2750 2150 50  0001 C CNN
+	1    2750 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2050 2750 2150
+$Comp
+L power:VBUS #PWR029
+U 1 1 5FA132C7
+P 2750 1000
+F 0 "#PWR029" H 2750 850 50  0001 C CNN
+F 1 "VBUS" H 2765 1173 50  0000 C CNN
+F 2 "" H 2750 1000 50  0001 C CNN
+F 3 "" H 2750 1000 50  0001 C CNN
+	1    2750 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1000 2750 1250
+NoConn ~ 1350 1800
+Text HLabel 3200 1550 2    50   BiDi ~ 0
+USB_DATA_PLUS
+Text HLabel 3200 1750 2    50   BiDi ~ 0
+USB_DATA_MINUS
+Wire Wire Line
+	3150 1550 3200 1550
+Wire Wire Line
+	3150 1750 3200 1750
+$Comp
+L Connector_Generic:Conn_01x06 J7
+U 1 1 5FA1B2DC
+P 1000 3450
+F 0 "J7" H 918 2925 50  0000 C CNN
+F 1 "HC 05 Connector" H 918 3016 50  0000 C CNN
+F 2 "" H 1000 3450 50  0001 C CNN
+F 3 "~" H 1000 3450 50  0001 C CNN
+	1    1000 3450
+	-1   0    0    1   
+$EndComp
+Text HLabel 1350 4050 2    50   Input ~ 0
+BT_ENABLE
+Text HLabel 1650 3350 2    50   Output ~ 0
+BT_TXD
+Text HLabel 1650 3250 2    50   Input ~ 0
+BT_RXD
+Text HLabel 1650 3150 2    50   Input ~ 0
+BT_STATE
+$Comp
+L power:GND #PWR028
+U 1 1 5FA1CB1E
+P 1700 3500
+F 0 "#PWR028" H 1700 3250 50  0001 C CNN
+F 1 "GND" H 1705 3327 50  0000 C CNN
+F 2 "" H 1700 3500 50  0001 C CNN
+F 3 "" H 1700 3500 50  0001 C CNN
+	1    1700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR026
+U 1 1 5FA1D7AE
+P 1550 3750
+F 0 "#PWR026" H 1550 3600 50  0001 C CNN
+F 1 "+3.3V" H 1565 3923 50  0000 C CNN
+F 2 "" H 1550 3750 50  0001 C CNN
+F 3 "" H 1550 3750 50  0001 C CNN
+	1    1550 3750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 3650 1200 4050
+Wire Wire Line
+	1200 4050 1350 4050
+Wire Wire Line
+	1550 3750 1550 3550
+Wire Wire Line
+	1550 3550 1200 3550
+Wire Wire Line
+	1700 3500 1700 3450
+Wire Wire Line
+	1700 3450 1200 3450
+Wire Wire Line
+	1650 3350 1200 3350
+Wire Wire Line
+	1650 3250 1200 3250
+Wire Wire Line
+	1650 3150 1200 3150
+$EndSCHEMATC

@@ -1,0 +1,142 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3.3V #PWR021
+U 1 1 5F9FD24D
+P 5150 2150
+F 0 "#PWR021" H 5150 2000 50  0001 C CNN
+F 1 "+3.3V" H 5165 2323 50  0000 C CNN
+F 2 "" H 5150 2150 50  0001 C CNN
+F 3 "" H 5150 2150 50  0001 C CNN
+	1    5150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5F9FD435
+P 5150 2500
+F 0 "R4" H 5220 2546 50  0000 L CNN
+F 1 "R" H 5220 2455 50  0000 L CNN
+F 2 "" V 5080 2500 50  0001 C CNN
+F 3 "~" H 5150 2500 50  0001 C CNN
+	1    5150 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2150 5150 2350
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5F9FE81A
+P 5650 2800
+F 0 "J5" H 5730 2792 50  0000 L CNN
+F 1 "Conn_01x02" H 5730 2701 50  0000 L CNN
+F 2 "" H 5650 2800 50  0001 C CNN
+F 3 "~" H 5650 2800 50  0001 C CNN
+	1    5650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2800 5350 2800
+Wire Wire Line
+	5150 2650 5150 2800
+$Comp
+L power:GND #PWR022
+U 1 1 5F9FEF67
+P 5150 3050
+F 0 "#PWR022" H 5150 2800 50  0001 C CNN
+F 1 "GND" H 5155 2877 50  0000 C CNN
+F 2 "" H 5150 3050 50  0001 C CNN
+F 3 "" H 5150 3050 50  0001 C CNN
+	1    5150 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2900 5150 2900
+Wire Wire Line
+	5150 2900 5150 3050
+$Comp
+L power:+3.3V #PWR023
+U 1 1 5FA01CB4
+P 6850 2150
+F 0 "#PWR023" H 6850 2000 50  0001 C CNN
+F 1 "+3.3V" H 6865 2323 50  0000 C CNN
+F 2 "" H 6850 2150 50  0001 C CNN
+F 3 "" H 6850 2150 50  0001 C CNN
+	1    6850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5FA01CBA
+P 6850 2500
+F 0 "R5" H 6920 2546 50  0000 L CNN
+F 1 "R" H 6920 2455 50  0000 L CNN
+F 2 "" V 6780 2500 50  0001 C CNN
+F 3 "~" H 6850 2500 50  0001 C CNN
+	1    6850 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2150 6850 2350
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5FA01CC1
+P 7350 2800
+F 0 "J6" H 7430 2792 50  0000 L CNN
+F 1 "Conn_01x02" H 7430 2701 50  0000 L CNN
+F 2 "" H 7350 2800 50  0001 C CNN
+F 3 "~" H 7350 2800 50  0001 C CNN
+	1    7350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2800 7050 2800
+Wire Wire Line
+	6850 2650 6850 2800
+$Comp
+L power:GND #PWR024
+U 1 1 5FA01CC9
+P 6850 3050
+F 0 "#PWR024" H 6850 2800 50  0001 C CNN
+F 1 "GND" H 6855 2877 50  0000 C CNN
+F 2 "" H 6850 3050 50  0001 C CNN
+F 3 "" H 6850 3050 50  0001 C CNN
+	1    6850 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2900 6850 2900
+Wire Wire Line
+	6850 2900 6850 3050
+Text HLabel 5550 2550 2    50   Output ~ 0
+THERMISTOR_OUT_1
+Text HLabel 7350 2550 2    50   Output ~ 0
+THERMISTOR_OUT_2
+Wire Wire Line
+	7350 2550 7050 2550
+Wire Wire Line
+	7050 2550 7050 2800
+Connection ~ 7050 2800
+Wire Wire Line
+	7050 2800 6850 2800
+Wire Wire Line
+	5550 2550 5350 2550
+Wire Wire Line
+	5350 2550 5350 2800
+Connection ~ 5350 2800
+Wire Wire Line
+	5350 2800 5150 2800
+$EndSCHEMATC

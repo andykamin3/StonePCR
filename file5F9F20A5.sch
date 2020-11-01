@@ -1,0 +1,147 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Driver_Display:CR2013-MI2120 U4
+U 1 1 5F9F3DAE
+P 5300 2250
+F 0 "U4" H 4650 3000 50  0000 C CNN
+F 1 "CR2013-MI2120" H 4900 2900 50  0000 C CNN
+F 2 "Display:CR2013-MI2120" H 5300 1550 50  0001 C CNN
+F 3 "http://pan.baidu.com/s/11Y990" H 4650 2750 50  0001 C CNN
+	1    5300 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR018
+U 1 1 5F9F58FE
+P 5300 1250
+F 0 "#PWR018" H 5300 1100 50  0001 C CNN
+F 1 "+3.3V" H 5315 1423 50  0000 C CNN
+F 2 "" H 5300 1250 50  0001 C CNN
+F 3 "" H 5300 1250 50  0001 C CNN
+	1    5300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1250 5300 1650
+$Comp
+L power:GND #PWR019
+U 1 1 5F9F618B
+P 5300 3000
+F 0 "#PWR019" H 5300 2750 50  0001 C CNN
+F 1 "GND" H 5305 2827 50  0000 C CNN
+F 2 "" H 5300 3000 50  0001 C CNN
+F 3 "" H 5300 3000 50  0001 C CNN
+	1    5300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2850 5300 3000
+Text HLabel 6400 1950 2    50   Input ~ 0
+SCREEN_D-C_SPI
+Text HLabel 6400 2050 2    50   Input ~ 0
+SCREEN_CS_SPI
+Text HLabel 6400 2150 2    50   Input ~ 0
+MOSI_IN
+Text HLabel 6400 2250 2    50   Input ~ 0
+MISO_IN
+Text HLabel 6400 2350 2    50   Input ~ 0
+SPI_CLOCK_IN
+Text HLabel 6400 2550 2    50   Input ~ 0
+SCREEN_RESET
+Text HLabel 4350 2150 0    50   Input ~ 0
+MOSI_IN
+Text HLabel 4350 2050 0    50   Input ~ 0
+MISO_IN
+Text HLabel 4350 1950 0    50   Input ~ 0
+SPI_CLOCK_IN
+Text HLabel 4350 1850 0    50   Input ~ 0
+SD_CS_SPI
+Text HLabel 4350 2250 0    50   Input ~ 0
+SD_FLASH
+Wire Wire Line
+	4350 1850 4500 1850
+Wire Wire Line
+	4350 1950 4500 1950
+Wire Wire Line
+	4500 2050 4350 2050
+Wire Wire Line
+	4350 2150 4500 2150
+Wire Wire Line
+	4500 2250 4350 2250
+Wire Wire Line
+	6400 2550 6100 2550
+Wire Wire Line
+	6100 2350 6400 2350
+Wire Wire Line
+	6100 2150 6400 2150
+Wire Wire Line
+	6100 2250 6400 2250
+Wire Wire Line
+	6400 2050 6100 2050
+Wire Wire Line
+	6100 1950 6400 1950
+Wire Wire Line
+	6400 2450 6100 2450
+$Comp
+L power:+3.3V #PWR020
+U 1 1 5F9F7D16
+P 6400 2450
+F 0 "#PWR020" H 6400 2300 50  0001 C CNN
+F 1 "+3.3V" V 6415 2578 50  0000 L CNN
+F 2 "" H 6400 2450 50  0001 C CNN
+F 3 "" H 6400 2450 50  0001 C CNN
+	1    6400 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5F9F8518
+P 5350 3800
+F 0 "BZ1" H 5355 3475 50  0000 C CNN
+F 1 "Buzzer" H 5355 3566 50  0000 C CNN
+F 2 "" V 5325 3900 50  0001 C CNN
+F 3 "~" V 5325 3900 50  0001 C CNN
+	1    5350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5F9F908D
+P 5100 3700
+F 0 "R3" V 5200 3700 50  0000 C CNN
+F 1 "100" V 4984 3700 50  0000 C CNN
+F 2 "" V 5030 3700 50  0001 C CNN
+F 3 "~" H 5100 3700 50  0001 C CNN
+	1    5100 3700
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4950 3700 0    50   Input ~ 0
+BUZZER_PWM_IN
+$Comp
+L power:GND #PWR017
+U 1 1 5F9FA129
+P 4900 3900
+F 0 "#PWR017" H 4900 3650 50  0001 C CNN
+F 1 "GND" H 4905 3727 50  0000 C CNN
+F 2 "" H 4900 3900 50  0001 C CNN
+F 3 "" H 4900 3900 50  0001 C CNN
+	1    4900 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3900 4900 3900
+$EndSCHEMATC
