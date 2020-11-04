@@ -34,7 +34,7 @@ U 1 1 5FA0C020
 P 1050 1600
 F 0 "J8" H 1107 2067 50  0000 C CNN
 F 1 "USB_B_Micro" H 1107 1976 50  0000 C CNN
-F 2 "" H 1200 1550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1200 1550 50  0001 C CNN
 F 3 "~" H 1200 1550 50  0001 C CNN
 	1    1050 1600
 	1    0    0    -1  
@@ -115,7 +115,7 @@ U 1 1 5FA1B2DC
 P 1000 3450
 F 0 "J7" H 918 2925 50  0000 C CNN
 F 1 "HC 05 Connector" H 918 3016 50  0000 C CNN
-F 2 "" H 1000 3450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1000 3450 50  0001 C CNN
 F 3 "~" H 1000 3450 50  0001 C CNN
 	1    1000 3450
 	-1   0    0    1   
