@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 7
+Sheet 4 7
 Title ""
 Date ""
 Rev ""
@@ -113,7 +113,7 @@ U 1 1 5F9F8518
 P 5350 3800
 F 0 "BZ1" H 5355 3475 50  0000 C CNN
 F 1 "Buzzer" H 5355 3566 50  0000 C CNN
-F 2 "" V 5325 3900 50  0001 C CNN
+F 2 "Buzzer_Beeper:Buzzer_Mallory_AST1109MLTRQ" V 5325 3900 50  0001 C CNN
 F 3 "~" V 5325 3900 50  0001 C CNN
 	1    5350 3800
 	1    0    0    -1  
