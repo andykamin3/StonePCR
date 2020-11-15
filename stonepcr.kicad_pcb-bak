@@ -405,7 +405,7 @@
   )
 
   (module Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical (layer F.Cu) (tedit 5A19A431) (tstamp 5FB3C144)
-    (at 195.70976 37.394)
+    (at 194.50976 34.644)
     (descr "Through hole straight socket strip, 1x09, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
     (tags "Through hole socket strip THT 1x09 2.54mm single row")
     (path /5F9F20A6/5FB48C3E)
@@ -499,7 +499,7 @@
   )
 
   (module Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical (layer F.Cu) (tedit 5A19A420) (tstamp 5FB286A6)
-    (at 269.94126 52.91594 180)
+    (at 268.74126 50.16594 180)
     (descr "Through hole straight socket strip, 1x05, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
     (tags "Through hole socket strip THT 1x05 2.54mm single row")
     (path /5F9F20A6/5FB3DDD2)
@@ -841,7 +841,7 @@
   )
 
   (module Display:CR2013-MI2120 (layer F.Cu) (tedit 5A02FE80) (tstamp 5FB16EB1)
-    (at 201.567 37.521)
+    (at 200.367 34.771)
     (descr "CR2013-MI2120 ILI9341 LCD Breakout http://pan.baidu.com/s/11Y990")
     (tags "CR2013-MI2120 ILI9341 LCD Breakout")
     (path /5F9F20A6/5F9F3DAE)
@@ -3061,8 +3061,8 @@
     )
   )
 
-  (gr_line (start 188.4 18) (end 276.05 18) (layer Edge.Cuts) (width 0.1))
-  (gr_line (start 188.4 75) (end 188.4 18) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 188.4 17.15) (end 276.05 18) (layer Edge.Cuts) (width 0.1))
+  (gr_line (start 188.4 71.2) (end 188.4 17.15) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 276 75) (end 188.4 75) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 276.05 18) (end 276 75) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 109.3 49) (end 109 152) (layer Edge.Cuts) (width 0.1))
