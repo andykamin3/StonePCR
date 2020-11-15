@@ -57,7 +57,7 @@ Text HLabel 5150 4000 0    50   Input ~ 0
 THERMISTOR_IN_2
 Text HLabel 6950 2100 2    50   Input ~ 0
 BT_STATE
-Text HLabel 6950 2800 2    50   BiDi ~ 0
+Text HLabel 6950 3000 2    50   BiDi ~ 0
 USB_DATA_MINUS
 Text HLabel 6950 2900 2    50   BiDi ~ 0
 USB_DATA_PLUS
@@ -710,8 +710,6 @@ Wire Wire Line
 Wire Wire Line
 	6700 2900 6950 2900
 Wire Wire Line
-	6700 2800 6950 2800
-Wire Wire Line
 	6700 2700 6950 2700
 Wire Wire Line
 	6700 2600 6950 2600
@@ -733,7 +731,6 @@ NoConn ~ 5300 4800
 NoConn ~ 6700 4400
 NoConn ~ 6700 3900
 NoConn ~ 6700 3600
-NoConn ~ 6700 3000
 Text HLabel 6950 4500 2    50   Output ~ 0
 VENTILADOR_PWM_1
 Text HLabel 6950 4600 2    50   Output ~ 0
@@ -742,4 +739,7 @@ Wire Wire Line
 	6950 4500 6700 4500
 Wire Wire Line
 	6700 4600 6950 4600
+NoConn ~ 6700 2800
+Wire Wire Line
+	6700 3000 6950 3000
 $EndSCHEMATC
