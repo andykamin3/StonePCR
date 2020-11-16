@@ -34,7 +34,7 @@ U 1 1 5FA0C020
 P 1050 1600
 F 0 "J8" H 1107 2067 50  0000 C CNN
 F 1 "USB_B_Micro" H 1107 1976 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1200 1550 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Wuerth_629105150521" H 1200 1550 50  0001 C CNN
 F 3 "~" H 1200 1550 50  0001 C CNN
 	1    1050 1600
 	1    0    0    -1  
@@ -68,9 +68,9 @@ F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 2950 2000 50  0001
 $EndComp
 NoConn ~ 1350 1800
 Text HLabel 3250 1250 2    50   BiDi ~ 0
-USB_DATA_PLUS
+USB_DATA+
 Text HLabel 3250 2050 2    50   BiDi ~ 0
-USB_DATA_MINUS
+USB_DATA-
 $Comp
 L Connector_Generic:Conn_01x06 J7
 U 1 1 5FA1B2DC
@@ -130,18 +130,6 @@ Wire Wire Line
 	1650 3250 1200 3250
 Wire Wire Line
 	1650 3150 1200 3150
-Wire Wire Line
-	1350 1600 2100 1600
-Wire Wire Line
-	2100 1600 2100 1250
-Wire Wire Line
-	2100 1250 2650 1250
-Wire Wire Line
-	1350 1700 2100 1700
-Wire Wire Line
-	2100 1700 2100 2050
-Wire Wire Line
-	2100 2050 2650 2050
 $Comp
 L power:VBUS #PWR0102
 U 1 1 5FB251FB
@@ -175,4 +163,12 @@ Wire Wire Line
 Wire Wire Line
 	3350 1650 3150 1650
 Connection ~ 3350 1650
+Text Label 1350 1600 0    50   ~ 0
+D+
+Text Label 1350 1700 0    50   ~ 0
+D-
+Text Label 2650 2050 0    50   ~ 0
+D-
+Text Label 2650 1250 0    50   ~ 0
+D+
 $EndSCHEMATC

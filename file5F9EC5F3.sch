@@ -14,9 +14,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Label 5150 3100 2    50   ~ 0
-OSC_IN_HSE
+OSC_HSE+
 Text Label 5150 3200 2    50   ~ 0
-OSC_OUT_HSE
+OSC_HSE-
 Text HLabel 6950 4000 2    50   Output ~ 0
 PELTIER_EN_1
 Text HLabel 5150 4500 0    50   Output ~ 0
@@ -58,9 +58,9 @@ THERMISTOR_IN_2
 Text HLabel 6950 2100 2    50   Input ~ 0
 BT_STATE
 Text HLabel 6950 3000 2    50   BiDi ~ 0
-USB_DATA_MINUS
+USB_DATA-
 Text HLabel 6950 2900 2    50   BiDi ~ 0
-USB_DATA_PLUS
+USB_DATA+
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J4
 U 1 1 5FA20544
@@ -484,13 +484,13 @@ Wire Wire Line
 	4200 5750 4950 5750
 Connection ~ 4200 5750
 Text Label 4950 5750 0    50   ~ 0
-OSC_IN_LSE
+OSC_LSE+
 Text Label 4950 6950 0    50   ~ 0
-OSC_IN_HSE
+OSC_HSE+
 Text Label 4950 6050 0    50   ~ 0
-OSC_OUT_LSE
+OSC_LSE-
 Text Label 4950 7250 0    50   ~ 0
-OSC_OUT_HSE
+OSC_HSE-
 $Comp
 L Device:C C9
 U 1 1 5FA7F940
@@ -568,9 +568,9 @@ Connection ~ 9500 950
 Wire Wire Line
 	9500 950  9750 950 
 Text Label 5150 4900 2    50   ~ 0
-OSC_IN_LSE
+OSC_LSE+
 Text Label 5150 5000 2    50   ~ 0
-OSC_OUT_LSE
+OSC_LSE-
 $Comp
 L MCU_ST_STM32F1:STM32F102R8Tx U3
 U 1 1 5FACEE69
