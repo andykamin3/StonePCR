@@ -52,9 +52,9 @@ SPI_CLOCK_IN
 Text HLabel 6950 3500 2    50   Output ~ 0
 BUZZER_PWM_IN
 Text HLabel 5150 3900 0    50   Input ~ 0
-THERMISTOR_IN_1
-Text HLabel 5150 4000 0    50   Input ~ 0
 THERMISTOR_IN_2
+Text HLabel 5150 4000 0    50   Input ~ 0
+THERMISTOR_IN_1
 Text HLabel 6950 2100 2    50   Input ~ 0
 BT_STATE
 Text HLabel 6950 3000 2    50   BiDi ~ 0
@@ -166,17 +166,6 @@ F 3 "~" H 1300 7100 50  0001 C CNN
 	1    1300 7100
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+5V #PWR031
-U 1 1 5FA25400
-P 2000 6800
-F 0 "#PWR031" H 2000 6650 50  0001 C CNN
-F 1 "+5V" H 2015 6973 50  0000 C CNN
-F 2 "" H 2000 6800 50  0001 C CNN
-F 3 "" H 2000 6800 50  0001 C CNN
-	1    2000 6800
-	1    0    0    -1  
-$EndComp
 Text Label 750  7100 2    50   ~ 0
 BOOT1
 Wire Wire Line
@@ -256,17 +245,6 @@ F 2 "Resistor_SMD:R_0805_2012Metric" V 1280 5950 50  0001 C CNN
 F 3 "~" H 1350 5950 50  0001 C CNN
 	1    1350 5950
 	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR043
-U 1 1 5FA3B372
-P 2050 5650
-F 0 "#PWR043" H 2050 5500 50  0001 C CNN
-F 1 "+5V" H 2065 5823 50  0000 C CNN
-F 2 "" H 2050 5650 50  0001 C CNN
-F 3 "" H 2050 5650 50  0001 C CNN
-	1    2050 5650
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	750  5950 1200 5950
@@ -742,4 +720,26 @@ Wire Wire Line
 NoConn ~ 6700 2800
 Wire Wire Line
 	6700 3000 6950 3000
+$Comp
+L power:+3.3V #PWR0106
+U 1 1 5FB75FE5
+P 2050 5650
+F 0 "#PWR0106" H 2050 5500 50  0001 C CNN
+F 1 "+3.3V" H 2065 5823 50  0000 C CNN
+F 2 "" H 2050 5650 50  0001 C CNN
+F 3 "" H 2050 5650 50  0001 C CNN
+	1    2050 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0107
+U 1 1 5FB7707A
+P 2000 6800
+F 0 "#PWR0107" H 2000 6650 50  0001 C CNN
+F 1 "+3.3V" H 2015 6973 50  0000 C CNN
+F 2 "" H 2000 6800 50  0001 C CNN
+F 3 "" H 2000 6800 50  0001 C CNN
+	1    2000 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
