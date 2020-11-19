@@ -640,10 +640,6 @@ Wire Wire Line
 Wire Wire Line
 	5150 3300 5300 3300
 Wire Wire Line
-	5150 3900 5300 3900
-Wire Wire Line
-	5150 4000 5300 4000
-Wire Wire Line
 	5150 4200 5300 4200
 Wire Wire Line
 	5300 4300 5150 4300
@@ -742,4 +738,8 @@ F 3 "" H 2000 6800 50  0001 C CNN
 	1    2000 6800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5150 4000 5300 4000
+Wire Wire Line
+	5150 3900 5300 3900
 $EndSCHEMATC
